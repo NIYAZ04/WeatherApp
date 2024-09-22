@@ -5,7 +5,7 @@ import SearchInput from './components/SearchInput';
 import TemperatureToggle from './components/TemperatureToggle';
 import ForecastCard from './components/ForecastCard';
 import './App.css'
-const API_KEY = 'ddb624a593b34968e1ff53f55a4f4bf1'; 
+const API_KEY = 'addYourKey'; 
 const DEFAULT_CITY = 'Delhi';
 
 
@@ -32,7 +32,7 @@ function App() {
         const response = await axios.get(
           `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${unit}&appid=${API_KEY}`
         );
-        setForecastData(response.data.list.filter((item, index) => index % 8 === 0)); // Every 8th item is approximately one day apart
+        setForecastData(response.data.list.filter((item, index) => index % 8 === 0)); 
       } catch (error) {
         console.error('Error fetching forecast data:', error);
       }
