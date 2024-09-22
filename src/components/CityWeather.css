@@ -1,0 +1,50 @@
+.city-weather {
+    background-color: #3498db;
+    padding: 20px;
+    margin-left: 30vw;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+  }
+  
+  .city-weather h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .city-weather p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .city-weather .weather-icon {
+    font-size: 60px;
+    color: white;
+  }
+  
+  @media (max-width: 800px) {
+    .city-weather {
+      margin-left: 0;
+      padding: 15px;
+      width: 90%;
+      max-width: none;
+    }
+  
+    .city-weather h2 {
+      font-size: 24px;
+    }
+  
+    .city-weather p {
+      font-size: 16px;
+    }
+  
+    .city-weather .weather-icon {
+      font-size: 50px;
+    }
+  }
+  

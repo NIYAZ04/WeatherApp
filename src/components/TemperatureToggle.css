@@ -1,0 +1,38 @@
+
+.temperature-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .toggleButtonSpecial {
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggleButtonSpecial:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+  }
+  
+  .toggleButtonSpecial:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .toggleButtonSpecial{
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  }
+  
