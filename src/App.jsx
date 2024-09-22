@@ -4,9 +4,10 @@ import CityWeather from './components/CityWeather';
 import SearchInput from './components/SearchInput';
 import TemperatureToggle from './components/TemperatureToggle';
 import ForecastCard from './components/ForecastCard';
-import './App.css'
-const API_KEY = 'addYourKey'; 
+import './App.css';
+const API_KEY = import.meta.env.VITE_API; 
 const DEFAULT_CITY = 'Delhi';
+console.log('API Key:', API_KEY);
 
 
 function App() {
